@@ -25,12 +25,9 @@
     "yeoman-generator": "~0.14.0"
   },
   "devDependencies": {
-    "mocha": "~1.14.0",
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.7.2",
-    "should": "~2.1.1",
-    "grunt-mocha": "~0.4.7",
-    "grunt-simple-mocha": "~0.4.0"
+    "grunt-mocha-test": "~0.8.1"
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
