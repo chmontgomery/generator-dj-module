@@ -1,5 +1,4 @@
 /*global describe, beforeEach, it*/
-'use strict';
 
 var path    = require('path');
 var helpers = require('yeoman-generator').test;
@@ -22,12 +21,17 @@ describe('dj-module generator', function () {
     it('creates expected files', function (done) {
         var expected = [
             // add files you expect to exist here.
-            '.jshintrc',
-            '.editorconfig'
+            '.gitignore',
+            '.editorconfig',
+            'README.md',
+            'package.json',
+            'Gruntfile.js',
+            'test/do_not_do_this_test.js',
+            'lib/do_not_do_this.js',
         ];
 
         helpers.mockPrompt(this.app, {
-            'someOption': true
+            'moduleName': 'dj.module.testModule'
         });
         this.app.options['skip-install'] = true;
         this.app.run({}, function () {
