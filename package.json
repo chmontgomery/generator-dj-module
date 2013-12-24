@@ -1,6 +1,6 @@
 {
   "name": "generator-dj-module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A generator for a new dj module",
   "keywords": [
     "yeoman-generator",
@@ -19,13 +19,14 @@
     "url": "git://github.com/chmontgomery/generator-dj-module.git"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "grunt test"
   },
   "dependencies": {
     "yeoman-generator": "~0.14.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.9",
     "grunt-contrib-jshint": "~0.7.2",
     "grunt-mocha-test": "~0.8.1"
   },
